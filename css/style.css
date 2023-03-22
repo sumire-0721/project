@@ -9,7 +9,7 @@ html {
 }
 body{
     font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #432;
 }
 a {
@@ -45,6 +45,13 @@ img {
     border-bottom: 2px #0bd solid;
     font-weight: normal;
 }
+.contact-title {
+  font-size: 4rem;
+  font-family: 'Kokoro';
+  text-transform: uppercase;
+  color: #ddd;
+  font-weight: normal;
+}
 
 /* ボタン */
 .button {
@@ -70,8 +77,8 @@ iframe {
     justify-content: space-between;
 }
 .logo {
-    width: 210px;
-    margin-top: 14px;
+    width: 100px;
+    margin-top: 13px;
 }
 .main-nav {
     display: flex;
@@ -198,8 +205,8 @@ aside p {
 /* MENU
 ------------------------------- */
 #menu {
-    background-image: url(../images/menu-bg.jpg);
-    min-height: 100vh;
+    background-image: url(../images/IMG_9359.JPG);
+    min-height: 130vh;
 }
 .menu-content {
     max-width: 560px;
@@ -221,11 +228,60 @@ aside p {
   margin-bottom: 50px;
 }
 
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.scroll {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
 /* CONTACT
 ------------------------------- */
 #contact {
     background-image: url(../images/IMG_9360.JPG);
     min-height: 100vh;
+}
+
+.contact-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2%;
+  color: #ddd;
+}
+
+.rainbow{
+  font-size: 300%;
+  font-weight:600;
+  animation:rainbow 3s infinite;
+  -webkit-animation:rainbow 3s infinite;
+}
+@keyframes rainbow{
+  12%{color:#ff5353;}
+  24%{color:#ffcf53;}
+  36%{color:#e8ff53;}
+  48%{color:#53ff5d;}
+  60%{color:#53ffbc;}
+  72%{color:#5393ff;}
+  84%{color:#ca53ff;}
+  100%{color:#ff53bd;}
+}
+@-webkit-keyframes rainbow{
+  12%{color:#ff5353;}
+  24%{color:#ffcf53;}
+  36%{color:#e8ff53;}
+  48%{color:#53ff5d;}
+  60%{color:#53ffbc;}
+  72%{color:#5393ff;}
+  84%{color:#ca53ff;}
+  100%{color:#ff53bd;}
 }
 
 /* フォーム */
