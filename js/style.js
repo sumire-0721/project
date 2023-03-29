@@ -558,3 +558,19 @@ add(cellPlugin);
 return Splitting;
 
 })));
+
+
+// 社長の座右の銘 内容
+
+$(function () {
+  $(window).scroll(function () {
+    $('.fade').each(function () {
+      const targetElement = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight) {
+        $(this).addClass('view');
+      }
+    });
+  });
+});
